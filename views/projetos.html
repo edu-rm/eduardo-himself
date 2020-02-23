@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Projetos</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+{% extends "layout.html" %}
 
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <a class="aimg" href="index.html"><img src="pp.jpg" alt="ERM"></a>
-            <a class="anome" href="index.html">Eduardo Rampon Meireles</a>
-        </div>
-        
-        <div class="links">
-            <a href="/">Sobre</a>
-            <a href="projetos.html">Projetos</a>
-        </div>
-    </header>
+{% block head %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
 
+{% block content %}
     <div id="wrapper">
         <h1>Pojetos</h1>
     </div>
@@ -125,8 +109,10 @@
         </div>
 
     </section>
+    
 
-    <!-- <div class="modal-overlay">
+
+     <div class="modal-overlay">
         <div class="modal">
             <a class="close-modal">
                 <i class="material-icons">close</i>
@@ -137,7 +123,6 @@
                 
              </div>
         </div>
-    </div> -->
-
-</body>
-</html>
+    </div> 
+    <script src="script.js"></script>   
+{% endblock %}

@@ -147,7 +147,7 @@ body .links{
 }
 
 /*MODAL*/
-/* .modal-overlay{
+.modal-overlay{
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
@@ -159,15 +159,16 @@ body .links{
     background-color: white;
     width: 90%;
     height: 90%;
-    margin: 5vh auto; Sempre é 100, esta pegando 5 apenas
+    margin: 5vh auto; /*Sempre é 100, esta pegando 5 apenas */
     position: relative;
+    
 }
 
 
 
 .modal .close-modal {
     color: black;
-    position: absolute; absoluto na tela toda, posso posicionar em qualquer lugar da tela, posso usar o top, right, bottom etc.
+    position: absolute; /*absoluto na tela toda, posso posicionar em qualquer lugar da tela, posso usar o top, right, bottom etc. */
     right: 7px;
     top:7px;
     cursor: pointer;
@@ -177,5 +178,6 @@ iframe{
     width: 100%;
     height: 90%;
     position: absolute;
-    f
-} */
+    top:50px;
+    
+} 
