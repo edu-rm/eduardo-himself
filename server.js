@@ -38,6 +38,22 @@ server.get("/projetos", function(req,res){
     return res.render("projetos", {itens : projetos})
 })
 
+server.get("/pesquisa", function(req,res){
+    const repo = req.query.repo
+
+    const repositorio = projetos.find(function(repositorio){
+        if(repositorio.title == repo){
+            return true;
+        }   
+    })
+
+    if(!repositorio){
+        return res.send("Repository not found");
+    }
+
+    return res.render("pesquisa",{item:repositorio})
+})
+
 server.listen(5000, function(){
     console.log("server is running")
 })

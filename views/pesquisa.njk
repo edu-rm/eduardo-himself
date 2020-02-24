@@ -1,0 +1,40 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Repositorio {{ item.title }}</title>
+{% endblock %}
+
+{% block content %}
+    <div id="wrapper">
+        <h1>{{ item.title }}</h1>
+    </div>
+
+    <section class="cards video">
+   
+        <div class="card">
+            <div class="card__content">
+                <div class="card__content-img {{ 'featured-wrapper' if item.featured }}">
+                    <img src="{{ item.avatar_img }}" alt="">
+                    {% if item.featured%}
+                        <div class="featured">Featured</div>
+                    {% endif %}
+                </div>
+                <p>{{ item.title }}</p>
+            </div>
+
+            <div class="card__info">
+                <p>{{ item.description }}</p>
+            </div>
+            <div class="card__access">
+                <a href="{{ item.access_link }}">Acessar</a>
+            </div>
+        </div>
+    
+
+    </section>
+    
+
+
+     
+{% endblock %}

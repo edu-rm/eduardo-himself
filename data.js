@@ -1,7 +1,7 @@
 module.exports = [
     {
         avatar_img : "https://avatars3.githubusercontent.com/u/37454606?s=460&v=4",
-        title : "Título do repositorio",
+        title : "T",
         description : "Lorem ipsum dolor q saepe porro architecto incidunt, est mollitia eius!",
         access_link: "https://www.github.com",
         featured:true

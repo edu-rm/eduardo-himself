@@ -200,3 +200,11 @@ iframe{
 .featured-wrapper.card__content-img {
     position: relative;
 }
+
+/*search page*/
+
+.video{
+    max-width: 600px;
+    grid-template-columns: 1fr;
+    /* padding-top: 56.25%; 16:9  */
+}
