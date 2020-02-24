@@ -2,7 +2,7 @@
 
 :root{
     --color-red:red;
-    --color-background : #000000ee; /*061311dd*/
+    --color-background : #000000aa; /*061311dd*/
     --color-header: black ;
 
 
@@ -183,3 +183,20 @@ iframe{
     top:50px;
     
 } 
+
+
+/*Featured*/
+
+.featured {
+    background-color: yellow;
+    color: black;
+    padding: 6px 6px;
+    position: absolute; /* Ele será absoluto em relação ao pai ( relative)*/
+    right: 15px;
+    top: -24px;
+    border-radius: 16px;
+}
+
+.featured-wrapper.card__content-img {
+    position: relative;
+}

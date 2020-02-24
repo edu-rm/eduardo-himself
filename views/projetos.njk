@@ -14,8 +14,11 @@
         {% for item in itens%}
         <div class="card">
             <div class="card__content">
-                <div class="card__content-img">
+                <div class="card__content-img {{ 'featured-wrapper' if item.featured }}">
                     <img src="{{ item.avatar_img }}" alt="">
+                    {% if item.featured%}
+                        <div class="featured">Featured</div>
+                    {% endif %}
                 </div>
                 <p>{{ item.title }}</p>
             </div>
