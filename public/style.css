@@ -111,6 +111,7 @@ body .links{
     background-color: #000000aa;
     color: white;
     border-radius: 10px 30px 0 30px;
+    /* display: grid; */
 }
 
 

@@ -3,15 +3,15 @@
 {% block content%}
 
     <div id="wrapper">
-        <img src="pp.jpg" alt="Eduardo Rampon Meireles foto">
-        <h1>Eduardo Rampon Meireles</h1>
-        <h2>Um eterno aprendiz.</h2>
+        <img src="{{ info.avatar_url }}" alt="Imagem de {{ info.name }}">
+        <h1>{{ info.nome }}</h1>
+        <h2>{{ info.bio }}</h2>
     </div>
 
     <div id="links-footer" class="links">
-        <a href="https://github.com/EduardoRamponMeireles" target="_blank">GitHub</a>
-        <a href="https://www.instagram.com/eduardo.rampon/" target="_blank">Instagram</a>
-        <a href="/" target="_blank">LinkedIn</a>
+        {% for link in info.links%}
+        <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+        {% endfor%}
     </div>
 
 {% endblock %}

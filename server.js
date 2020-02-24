@@ -17,7 +17,18 @@ nunjucks.configure("views", {
 
 
 server.get("/", function(req, res){
-    return res.render("sobre")
+    const info = {
+        avatar_url : "https://i.imgur.com/iCmED2B.jpg",
+        name : "Eduardo Rampon Meireles",
+        bio : "Um eterno aprendiz",
+        links : [
+            { name : "GitHub", url : "https://github.com/EduardoRamponMeireles"},
+            { name : "Instagram", url : "https://www.instagram.com/eduardo.rampon/"},
+            { name : "LinkedIn", url : "https://github.com/EduardoRamponMeireles"},
+        ]
+    }
+
+    return res.render("sobre", { info : info})
 })
 
 server.get("/projetos", function(req,res){
